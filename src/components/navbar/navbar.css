@@ -1,0 +1,44 @@
+.navbar-div{
+    height: 4rem;
+    background: var(--primati-color);
+    width: auto;
+    display: flex;
+}
+
+.navbar-div h1{
+    color: white;
+    font-family: logo;
+}
+
+.active{
+    color: white;
+    font-size: 24px;
+    font-family: text-font;
+    font-weight:60;
+    text-decoration: none;
+
+}
+
+.inactive{
+    color: var(--text-color-1);
+    font-size: 24px;
+    font-family: text-font;
+    font-weight:60;
+    text-decoration: none;
+}
+
+.logo-div{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding-left: 1rem;
+}
+
+.nav-div{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex: 1;
+    justify-content: end;
+    padding-right: 3rem;
+}
