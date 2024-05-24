@@ -3,12 +3,17 @@ import ReactDOM from 'react-dom/client';
 import {Route, RouterProvider, createBrowserRouter, createRoutesFromElements} from 'react-router-dom'
 import './index.css';
 import App from './App';
+import { Home } from './components/home/Home';
+import { Footer } from './components/footer/Footer';
+import { Navbar } from './components/navbar/Navbar';
 
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path='\' element = {<App/>}>
-
+    <Route path='/' element = {<App/>}>
+      <Route path='' element={<Home />} />
+      <Route path='footer' element={<Footer />} />
+      <Route path='navbar' element = {<Navbar/>}/>
     </Route>
   )
 )
