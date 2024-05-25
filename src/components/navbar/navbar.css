@@ -1,6 +1,6 @@
 .navbar-div{
     height: 4rem;
-    background: var(--primati-color);
+    background: var(--primary-color);
     width: auto;
     display: flex;
 }
