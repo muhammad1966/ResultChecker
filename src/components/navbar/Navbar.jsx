@@ -1,17 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './navbar.css'
 import { NavLink } from 'react-router-dom'
+import { RiCloseLine, RiMenu3Line } from 'react-icons/ri'
 
-export const Navbar = () => {
-  return (
-      <div className='navbar-div'>
-          <div className='logo-div'>
-              <h1>
-                  RC
-              </h1>
-          </div>
-          <div className='nav-div'>
-          <div>
+const Nav = () => {
+    return (
+        <>
+            <div>
                   <NavLink
                       to=''
                       className={({ isActive, isPending }) => 
@@ -58,6 +53,32 @@ export const Navbar = () => {
                       Contact Us
                   </NavLink>
               </div>
+        </>
+    )
+}
+
+export const Navbar = () => {
+  const [toggled, setToggle] = useState(false)  
+  return (
+      <div className='navbar-div'>
+          <div className='logo-div'>
+              <h1>
+                  RC
+              </h1>
+          </div>
+          <div className='nav-div'>
+            <Nav/>
+          </div>
+          <div className='navbar-div-mob'>
+              {toggled ? <RiCloseLine size={27} color="#fff" onClick={() => setToggle(false)} />
+                : <RiMenu3Line size={27} color="#fff" onClick={() => setToggle(true)} />
+              }
+
+              {toggled && (
+                  <div className='nav-mob'>
+                    <Nav/>
+                  </div>
+              )}
           </div>
       </div>
     )

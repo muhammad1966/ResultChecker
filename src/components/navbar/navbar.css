@@ -42,3 +42,37 @@
     justify-content: end;
     padding-right: 3rem;
 }
+
+.navbar-div-mob{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 2rem;
+    position: relative;
+}
+
+.nav-mob{
+    background: var(--secondary-color);
+    padding: 3rem 2rem;
+    width: 18rem;
+    display: flex;
+    animation: pop 0.2s linear;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: 2px 5px 5px rgba(103, 20, 20, 0.7);
+    position: absolute;
+    top: 4.5rem;
+    right: 0.4rem;
+}
+
+@keyframes pop {
+    0%{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
