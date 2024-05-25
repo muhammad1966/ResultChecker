@@ -14,7 +14,7 @@
     color: white;
     font-size: 24px;
     font-family: text-font;
-    font-weight:60;
+    font-weight:40px;
     text-decoration: none;
 
 }
@@ -23,7 +23,7 @@
     color: var(--text-color-1);
     font-size: 24px;
     font-family: text-font;
-    font-weight:60;
+    font-weight:300;
     text-decoration: none;
 }
 
@@ -44,7 +44,7 @@
 }
 
 .navbar-div-mob{
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     margin-right: 2rem;
@@ -58,6 +58,7 @@
     display: flex;
     animation: pop 0.2s linear;
     flex-direction: column;
+    border-radius: 5px;
     gap: 1rem;
     box-shadow: 2px 5px 5px rgba(103, 20, 20, 0.7);
     position: absolute;
@@ -74,5 +75,60 @@
     }
     100%{
         transform: scale(1);
+    }
+}
+
+@media screen and (max-width:1400px) {
+    .active{
+        font-size: 16px;
+    }
+
+    .inactive{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .nav-div{
+        display: none;
+    }
+
+    .navbar-div-mob{
+        display: flex;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .nav-mob{
+        padding: 2rem 1rem;
+        width: 14rem;
+    }
+
+    .active{
+        font-size: 16px;
+        
+    }
+
+    .inactive{
+        font-size: 16px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .nav-mob{
+        padding: 2rem 1rem;
+        width: 10rem;
+        text-align: left;
+    }
+
+    .active{
+        font-size: 14px;
+        
+    }
+
+    .inactive{
+        font-size: 14px;
     }
 }
