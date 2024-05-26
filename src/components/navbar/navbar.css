@@ -52,12 +52,13 @@
 }
 
 .nav-mob{
-    background: var(--secondary-color);
+    background: var(--primary-color);
     padding: 3rem 2rem;
     width: 18rem;
     display: flex;
     animation: pop 0.2s linear;
     flex-direction: column;
+    z-index: 16;
     border-radius: 5px;
     gap: 1rem;
     box-shadow: 2px 5px 5px rgba(103, 20, 20, 0.7);
