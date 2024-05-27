@@ -27,23 +27,23 @@ export const Footer = () => {
         </div>
         <div>
           <ul>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum dolor sit amet by musa and folly.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
+            <a href='https://neu.edu.tr/?lang=en'>Go to NEU main page.</a>
+            <br />
+            <a href='https://github.com/muhammad1966/ResultChecker'>This site's github page.</a>
+            <br />
+            <a href='https://uzebim.neu.edu.tr/'>Go to Uzebim.</a>
           </ul>
         </div>
       </div>
       <div className='app-footer_logos'>
-          <SocialIcon className="socicon"  bgColor='#555555' fgColor='#2D313A' url='www.x.com' href='www.x.com' />
-          <SocialIcon className="socicon"  bgColor='#555555' fgColor='#2D313A' url='www.facebook.com'/>
-          <SocialIcon className="socicon"  bgColor='#555555' fgColor='#2D313A' url='www.pinterest.com'/>
-          <SocialIcon className="socicon"  bgColor='#555555' fgColor='#2D313A' url='www.tiktok.com'/>
-          <SocialIcon className="socicon"  bgColor='#555555' fgColor='#2D313A' url='www.instagram.com'/>
-          <SocialIcon className="socicon"  bgColor='#555555' fgColor='#2D313A'  url='www.linkedin.com'/> 
+          <SocialIcon className="socicon"  bgColor='#918f8f' fgColor='#2D313A' url='https://x.com/MuhammadSung' />
+          <SocialIcon className="socicon"  bgColor='#918f8f' fgColor='#2D313A' url='https://www.facebook.com/muhd.sunusi.925'/>
+          <SocialIcon className="socicon"  bgColor='#918f8f' fgColor='#2D313A' url='https://www.pinterest.com/bsmuhammad352/'/>
+          <SocialIcon className="socicon"  bgColor='#918f8f' fgColor='#2D313A' url='https://www.instagram.com/sanusi.muhammadbello/'/>
+          <SocialIcon className="socicon"  bgColor='#918f8f' fgColor='#2D313A'  url='www.linkedin.com'/> 
       </div>
       <div className='app-footer_copy'>
-       <h4> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam illum eligendi praesentium asperiores doloremque iste libero cumque adipisci laborum amet!</h4>
+       <h4>KiwiCode2024©</h4>
       </div>
     </div>
   )
