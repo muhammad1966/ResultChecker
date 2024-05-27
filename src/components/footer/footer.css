@@ -1,0 +1,79 @@
+.app-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background: var(--primary-color);
+    padding: 3rem 2rem;
+    font-family: text-font;
+}
+
+.app-footer_content{
+    display: flex;
+    flex-direction:row;
+    margin-bottom: 2rem;
+}
+
+.app-footer_content div{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 2rem;
+    
+    
+}
+
+.app-footer_content p{
+    color: var(--text-color-1);
+    font-size: 20px;
+}
+
+.app-footer_content a{
+    color: var(--text-color-1);
+    font-size: 20px;
+
+}
+
+.app-footer_content h1{
+    font-size: 20px;
+    font-family: text-font;
+    line-height: 25px;
+    color: white;
+}
+
+.app-footer_logos{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.socicon{
+    margin: 0 1rem !important;
+    
+}
+
+.app-footer_copy{
+    display: flex;
+}
+
+.app-footer_copy h4{
+    text-align: center;
+}
+
+@media screen and (max-width:600px){
+    .socicon{
+        margin: 0 0.3rem !important;
+        
+    }
+
+    .app-footer_content{
+        flex-direction: column;
+        
+    }
+
+    .app-footer_content div{
+        margin: 1rem 0.2rem;
+    }
+}
