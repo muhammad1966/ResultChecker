@@ -45,13 +45,12 @@ const Nav = () => {
                   </NavLink>
               </div>
               <div>
-              <NavLink
-                      to="footer"
-                      className={({ isActive, isPending }) => 
-                        isActive ? "active": 'inactive'                      }
+              <a
+                      href='#footer'
+                      className='inactive'                      
                   >
                       Contact Us
-                  </NavLink>
+                  </a>
               </div>
         </>
     )
