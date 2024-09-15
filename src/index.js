@@ -7,7 +7,7 @@ import { Home } from './components/home/Home';
 import { Footer } from './components/footer/Footer';
 import { Navbar } from './components/navbar/Navbar';
 import { Resul } from './components/result/Resul';
-import { Wall } from './components/wall of fame/Wall';
+import { Hall } from './components/hall of fame/Hall';
 
 
 const router = createBrowserRouter(
@@ -17,7 +17,7 @@ const router = createBrowserRouter(
       <Route path='footer' element={<Footer />} />
       <Route path='navbar' element = {<Navbar/>}/>
       <Route path='result' element={<Resul/>}/>
-      <Route path='wall' element = {<Wall/>}/>
+      <Route path='wall' element = {<Hall/>}/>
     </Route>
   )
 )
