@@ -8,6 +8,7 @@ import { Footer } from './components/footer/Footer';
 import { Navbar } from './components/navbar/Navbar';
 import { Resul } from './components/result/Resul';
 import { Hall } from './components/hall of fame/Hall';
+import { UserPanel } from './components/user__panel/UserPanel';
 
 
 const router = createBrowserRouter(
@@ -17,7 +18,8 @@ const router = createBrowserRouter(
       <Route path='footer' element={<Footer />} />
       <Route path='navbar' element = {<Navbar/>}/>
       <Route path='result' element={<Resul/>}/>
-      <Route path='wall' element = {<Hall/>}/>
+      <Route path='hall' element = {<Hall/>}/>
+      <Route path='userpanel' element={<UserPanel/>}/>
     </Route>
   )
 )

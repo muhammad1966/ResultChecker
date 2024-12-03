@@ -60,6 +60,7 @@ form{
 
 .result-submit{
     width: 40rem;
+    cursor: pointer;
     height: 4rem;
     border: 4px var(--primary-color) solid;
     background: var(--primary-color);

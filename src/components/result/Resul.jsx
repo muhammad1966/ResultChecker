@@ -1,27 +1,30 @@
 import React from 'react'
 import './result.css'
+import { UserPanel } from "../user__panel/UserPanel.jsx"
+
 import {useState} from 'react'
 
 export const Resul = () => {
     const [data, setData] = useState(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
-
+    const [inputValue, setInputValue] = useState("");
     const BASE_URL = "https://jsonplaceholder.typicode.com/posts";
 
     const fetchData = () => {
         setError(null);
         setLoading(true);
 
-        fetch(BASE_URL)
+        fetch(BASE_URL + `/${inputValue}`)
         .then((response) =>{
             if(!response.ok){
-                throw new Error ("Something went wrong with the networt")
+                alert ("Something went wrong with the networt!");
             }
             return response.json();
         })
         .then((data) =>{
             setData(data);
+            console.log(data);
         })
         .catch((error)=>{
             setError(error);
@@ -30,6 +33,15 @@ export const Resul = () => {
             setLoading(false);
         })
     }
+
+    if(error == null && loading === false){
+        if(data){
+            return <UserPanel data = {data}/>
+        }
+    }
+    else if(error){
+        alert("Operation failed!");
+    }
     
   return (
     <div className='result-div'>
@@ -37,7 +49,7 @@ export const Resul = () => {
             <h3>
                 Provide your name or student number in the field below.
             </h3>
-            <input className='result-input' type="text"/>
+            <input className='result-input' type="text" value={inputValue} onChange={(e) => {setInputValue(e.target.value)}}/>
             <button className='result-submit' type="submit" onClick={fetchData}>Submit</button>
         </div>
     </div>
