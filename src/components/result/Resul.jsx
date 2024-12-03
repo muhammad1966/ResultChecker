@@ -9,16 +9,18 @@ export const Resul = () => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const [inputValue, setInputValue] = useState("");
+    const [isOk, setIsOk] = useState(true);
     const BASE_URL = "https://jsonplaceholder.typicode.com/posts";
 
     const fetchData = () => {
         setError(null);
         setLoading(true);
 
-        fetch(BASE_URL + `/${inputValue}`)
+        fetch(BASE_URL /*+ `/${inputValue}`*/)
         .then((response) =>{
             if(!response.ok){
-                alert ("Something went wrong with the networt!");
+                alert ("Something went wrong!");
+                setIsOk(false);
             }
             return response.json();
         })
@@ -34,13 +36,14 @@ export const Resul = () => {
         })
     }
 
-    if(error == null && loading === false){
+    if(isOk === true && loading === false){
         if(data){
             return <UserPanel data = {data}/>
         }
     }
-    else if(error){
+    else if(error && isOk === false){
         alert("Operation failed!");
+        setIsOk(true);
     }
     
   return (

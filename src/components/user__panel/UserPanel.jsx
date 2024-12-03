@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const UserPanel = () => {
+export const UserPanel = ({data}) => {
   return (
     <div>UserPanel</div>
   )
