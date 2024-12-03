@@ -45,7 +45,7 @@ form{
 .result-input{
     width: 40rem;
     height: 4rem;
-    margin-top: 7rem;
+    margin-top: 5rem;
     margin-bottom: 3rem;
     border: 4px var(--primary-color) solid;
     background: var(--text-color-1);
