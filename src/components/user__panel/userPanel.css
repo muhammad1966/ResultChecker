@@ -1,0 +1,41 @@
+.user-panel-div{
+    height: 38rem;
+    display: flex;
+    padding:0 3rem;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+
+.user-panel-div::before{
+    content: '';
+    position: absolute;
+    top: 4rem;
+    display: flex;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('../../assets/result-image.jpg');
+    background-size: cover;
+    z-index: -1;
+    filter: brightness(0.4);
+}
+
+.user-panel-content{
+    display: flex;
+    width: 100%;
+    gap: 4rem;
+    align-items: center;
+}
+
+.content-numeric, .content-chat{
+    display: flex;
+    height: 33rem;
+    flex: 1;
+    background:var(--text-color-1);
+    opacity: 0.8;
+}
+
+.content-chat{
+    flex: 2;
+}
