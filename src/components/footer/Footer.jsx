@@ -43,7 +43,7 @@ export const Footer = () => {
           <SocialIcon className="socicon"  bgColor='#918f8f' fgColor='#2D313A'  url='www.linkedin.com'/> 
       </div>
       <div className='app-footer_copy'>
-       <h4>KiwiCode2024©</h4>
+       <h4>KiwiCodes2024©</h4>
       </div>
     </div>
   )
