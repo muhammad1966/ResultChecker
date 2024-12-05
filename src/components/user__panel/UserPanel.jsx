@@ -6,7 +6,9 @@ export const UserPanel = ({data}) => {
     <div className='user-panel-div'>
       <div className='user-panel-content'>
         <div className='content-numeric'>
-          11111
+          <h3>
+            Your results in the last three committees:
+          </h3>
         </div>
         <div className='content-chat'>
           222222

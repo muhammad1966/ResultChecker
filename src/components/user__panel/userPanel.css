@@ -39,3 +39,12 @@
 .content-chat{
     flex: 2;
 }
+
+.content-numeric{
+    padding: 3rem 2rem;
+}
+
+.content-numeric h3{
+    font-size: 2rem;
+    color: var(--primary-color);
+}
