@@ -42,9 +42,62 @@
 
 .content-numeric{
     padding: 3rem 2rem;
+    flex-direction: column;
+    border-radius: 5px;
 }
 
 .content-numeric h3{
     font-size: 2rem;
+    font-family: text-font;
     color: var(--primary-color);
 }
+
+
+.current-div, .previous-div, .other-div{
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+    margin-top: 2rem;
+}
+
+.current-div div, .previous-div div, .other-div div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.current-div h1, .previous-div h1, .other-div h1{
+    font-family: text-font;
+    color: var(--primary-color);
+    font-size: 4rem;
+}
+
+.current-div h4, .previous-div h4, .other-div h4{
+    color: var(--tatiary-color);
+}
+
+
+
+.current-label-numeric, .previous-label-numeric, .other-label-numeric{
+    font-size: 24px;
+    font-family: text-font;
+}
+
+.content-chart {
+    flex: 2;
+    height: 33rem; 
+    margin: 0 auto; 
+    display: flex; 
+    justify-content: center; 
+    background: var(--tatiary-color2);
+    opacity: 0.8;
+    align-items: center;
+    padding: 0 1rem;
+    border-radius: 5px;
+}
+
+.content-chart canvas{
+    height: 33rem;
+    width: 100%;
+}
+  

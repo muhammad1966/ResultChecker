@@ -16,9 +16,10 @@
 
 
 :root{
-    --primary-color: #800000;
-    --secondary-color: #8c3333;
+    --primary-color: rgb(128, 0, 0);
+    --secondary-color: rgb(140, 51, 51);
     --tatiary-color:rgb(150, 50, 50);
+    --tatiary-color2:rgb(173, 153, 153);
     --text-color-1: #918f8f;
     --text-color-2: white;
 }
