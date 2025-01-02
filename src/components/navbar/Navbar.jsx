@@ -28,7 +28,7 @@ const Nav = () => {
               </div>
               <div>
               <NavLink
-                      to="wof"
+                      to="hall"
                       className={({ isActive, isPending }) => 
                         isActive ? "active": 'inactive'                      }
                   >
