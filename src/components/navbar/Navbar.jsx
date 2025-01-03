@@ -32,7 +32,7 @@ const Nav = () => {
                       className={({ isActive, isPending }) => 
                         isActive ? "active": 'inactive'                      }
                   >
-                      Wall of Fame
+                      Hall of Fame
                   </NavLink>
               </div>
               <div>
