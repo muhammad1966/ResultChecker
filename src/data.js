@@ -69,7 +69,7 @@ const data = [
     id: 11,
     name: "Bello Shuaibu",
     level: 3,
-    scores: [234, 24, 24, 34, 90],
+    scores: [645, 24, 24, 34, 90],
   },
   {
     id: 12,
