@@ -46,6 +46,9 @@
 
 .hall-visual {
     flex: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: var(--text-color-1);
     height: 97%;
     opacity: 0.9;

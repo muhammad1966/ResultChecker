@@ -101,3 +101,52 @@
     width: 100%;
 }
   
+
+@media screen and (max-width : 1000px) {
+    .user-panel-content{
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .user-panel-div{
+        overflow: hidden;
+        padding-top: 10rem;
+        overflow-y: auto;
+        scrollbar-width: none;
+    }
+
+    .content-numeric{
+        width: 80%;
+        height: 70vh; 
+    }
+
+    .content-chart{
+      width: 80%;
+      height: 70%;
+    }
+
+    .current-div, .previous-div, .other-div{
+        gap: 14rem;
+        margin-top: 0rem;
+    }
+}
+
+@media screen and (max-width : 500px ) {
+    .content-chart{
+        display: none;
+    }
+
+    .user-panel-div{
+        padding-top: 3rem;
+    }
+
+    .content-numeric{
+        width: 100%;
+    }
+
+    .current-div, .previous-div, .other-div{
+        gap: 3rem;
+        
+    }
+}

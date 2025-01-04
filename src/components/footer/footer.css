@@ -62,7 +62,7 @@
     text-align: center;
 }
 
-@media screen and (max-width:800px){
+@media screen and (max-width:1050px){
     .socicon{
         margin: 0 0.3rem !important;
         
@@ -76,4 +76,14 @@
     .app-footer_content div{
         margin: 1rem 0.2rem;
     }
+
+    /*.app-footer {
+        position: fixed; 
+        bottom: 0;       
+        left: 0;
+        right: 0;
+        padding: 2rem 1rem; 
+        z-index: 1000;      
+    }*/
 }
+

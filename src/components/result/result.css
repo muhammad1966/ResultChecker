@@ -69,3 +69,20 @@ form{
     color: var(--text-color-2);    
 }
 
+@media screen and (max-width : 500px) {
+    .result-content-div{
+        width: auto;
+    }
+    .result-content-div h3{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .result-input{
+        width: auto;
+    }
+
+    .result-submit{
+        width: auto;
+    }
+}
