@@ -44,7 +44,7 @@ const displayCurrentItemData = (id) => {
 };
 
 export const Hall = () => {
-  const [selected, setSelected] = useState(null);
+  const [selected, setSelected] = useState(0);
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
   useEffect(() => {
@@ -62,6 +62,7 @@ export const Hall = () => {
       <div className="name-div">
         {data.map((item) => (
           <React.Fragment key={item.id}>
+
             <div
               className="item-div"
               onClick={() => setSelected(selected === item.id ? null : item.id)} // Toggle visibility
