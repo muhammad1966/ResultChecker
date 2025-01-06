@@ -1,0 +1,29 @@
+.about-div {
+    height: 38rem;
+    display: flex;
+    padding: 0 3rem;
+    margin-top: 3rem;
+    width: auto;
+    font-size: 24px;
+    font-family: font-text;
+    background-color: var(--text-color-1);
+    align-items: flex-start; 
+    overflow: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    color: var(--text-color-3);
+}
+
+.about-div p {
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+    .about-div {
+        font-size: 20px;
+       padding: 1rem;
+    } 
+    .about-div p {
+        margin-top: 1rem; 
+    }
+}

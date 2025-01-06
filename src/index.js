@@ -9,7 +9,7 @@ import { Navbar } from './components/navbar/Navbar';
 import { Resul } from './components/result/Resul';
 import { Hall } from './components/hall of fame/Hall';
 import { UserPanel } from './components/user__panel/UserPanel';
-
+import { About } from './components/about/About.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -20,6 +20,7 @@ const router = createBrowserRouter(
       <Route path='result' element={<Resul/>}/>
       <Route path='hall' element = {<Hall/>}/>
       <Route path='userpanel' element={<UserPanel/>}/>
+      <Route path='about' element={<About/>}/>
     </Route>
   )
 )
